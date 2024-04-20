@@ -108,7 +108,7 @@ print(l6)
 #16 Escribe un programa en Python para filtrar números pares de un diccionario de valores.
 d1={'V': [1, 4, 6, 10], 'VI': [1, 4, 12], 'VII': [1, 3, 8]}
 d2={'V': [1, 3, 5], 'VI': [1, 5], 'VII': [2, 7, 9]}
-def filtpar(a):
+def fp(a):
     b = []
     c = []
     for i in a:
@@ -116,7 +116,7 @@ def filtpar(a):
         c = [i for i in b if i%2==0]
         a[i]=c
 
-filtpar(d1)
-filtpar(d2)
+fp(d1)
+fp(d2)
 print(f'el diccionario obtenido para el primer diccionario filtrado es {d1}')
 print(f'el diccionario obtenido para el segundo dicionario filtrado es:{d2}')
